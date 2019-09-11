@@ -11,11 +11,11 @@
       <a href="index.html"><img src="/img/logo-technomart.svg" alt="Техномарт" width="109" height="19"></a>
       </div>
       <form action="" method="get">
-        <button type="submit"><img src="./img/icon-search.svg" alt="Поиск" width="17" height="17"></button>
+        <button type="submit" value="search" name="search" title="Найти"><img src="./img/icon-search.svg" alt="Поиск" width="17" height="17"></button>
         <input name="search" placeholder="Поиск:" type="search">
       </form>
-      <a href="#"><img src="./img/icon-bookmark.svg" alt="Закладки" width="14" height="16">Закладки: 0</a>
-      <a href="#"><img src="./img/icon-cart.svg" alt="Корзина" width="15" height="15">Корзина: 10</a>
+      <a href="#"><span><!--bookmark-logo--></span>Закладки: 0</a>
+      <a href="#"><span><!---cart-logo--></span>Корзина: 10</a>
       <a href="#">Оформить заказ</a>
     </section>
     <section>
@@ -25,12 +25,13 @@
          для ремонта</p>
       </div>
       <div>
-          <a href="tel:+7(812)555-05-55"><img src="./img/icon-phone.svg" alt="Позвонить" width="19" height="19">+7 (812) 555-05-55</a>
+          <a href="tel:+7(812)555-05-55"><img src="./img/icon-phone.svg" alt="Позвонить" width="19" height="19"></a>
+          <p>+7 (812) 555-05-55</p>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
       <div>
         <a href="#"><img src="./img/icon-user.svg" alt="Иконка пользователя" width="20" height="18">Равшан Джамшутович</a>
-        <button type="submit" value="logout"><img src="./img/icon-logout.svg" alt="Выход" width="20" height="17"></button>
+        <button type="submit" value="logout" name="logout" title="Выйти"><img src="./img/icon-logout.svg" alt="Выход" width="20" height="17"></button>
       </div>
       <div>
         <a href="#">Мои заказы</a>
@@ -102,8 +103,8 @@
           <ins>25500 Р.</ins>
         </div>
         <div>
-          <button type="submit" name="buy" title="Купить"><img src="./img/icon-cart.svg" alt="Корзина" width="15" height="15">Купить</button>
-          <button type="submit" name="add-in-bookmarks" title="В закладки">В закладки</button>
+          <button type="submit" name="buy" value="add-in-cart" title="Купить"><img src="./img/icon-cart.svg" alt="Корзина" width="15" height="15">Купить</button>
+          <button type="submit" name="add-in-bookmarks" value="add-in-bookmarks" title="В закладки">В закладки</button>
           <h3>
              Перфоратор BOSCH <br>
               BFG 2000
@@ -185,13 +186,13 @@
             <p>© 2010–2019 Компания «Техномарт» <br>
             Все права защищены</p> 
             <ul>
-              <li><a href="#"><img src="./img/icon-vk.svg" alt="В контакте" width="26" height="15"></a></li>
-              <li><a href="#"><img src="./img/icon-fb.svg" alt="Фейсбук" width="12" height="12"></a></li>
-              <li><a href="#"><img src="./img/icon-vk.svg" alt="В контакте" width="21" height="21"></a></li>
+              <li><a href="#" target="_blank" title="Наш вКонтакте "><img src="./img/icon-vk.svg" alt="В контакте" width="26" height="15"></a></li>
+              <li><a href="#" target="_blank" title="Наш фейсбук"><img src="./img/icon-fb.svg" alt="Фейсбук" width="12" height="12"></a></li>
+              <li><a href="#" target="_blank" title="Наш инстаграм"><img src="./img/icon-insta.svg" alt="В контакте" width="21" height="21"></a></li>
             </ul>
             <p>
               Обратная связь:
-              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <a href="mailto:mail@htmlacademy.ru" title="Напишите нам">mail@htmlacademy.ru</a>
             </p>
             <address>
                 Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
