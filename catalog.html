@@ -3,31 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Каталог товаров магазина Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <header>
     <section>
       <div>
-        <a href="index.html" title="Техномарт" aria-label="Логотип Техномарт">
-          <img src="./img/logo-technomart.svg" alt="Техномарт" width="109" height="19">
+        <a href="index.html" title="Техномарт" aria-label="На главную страницу">
+          <img src="./img/logo-technomart.svg" alt="Логотип Техномарт" width="109" height="19">
         </a>
       </div>
       <div>
       <form action="https://echo.htmlacademy.ru" method="get">
-        <button type="submit" value="Найти" name="search-btn" title="Найти" aria-label="Найти">
-          <span><!--search-logo-->Поиск</span>
+        <button type="submit" value="Найти" name="search-btn"  aria-label="Поиск">
+          <span aria-hidden="true"><!--search-logo-->Поиск</span>
         </button>
         <label for="search-field">Поиск:</label>
-        <input type="text" name="search" id="search-field">
+        <input type="text" name="search" id="search-field" aria-label="Поле поиска">
       </form>
       </div>
       <div>
       <a href="#">
-        <span><!--bookmark-logo--></span>
+        <span aria-hidden="true"><!--bookmark-logo--></span>
       Закладки: 0
       </a> 
       <a href="#">
-        <span><!---cart-logo--></span>
+        <span aria-hidden="true"><!---cart-logo--></span>
       Корзина: 10</a>
       <a href="#">Оформить заказ</a>
       </div>
@@ -47,7 +51,7 @@
       </div>
       <div>
         <a href="tel:+7(812)555-05-55" title="Позвонить нам" aria-label="Позвонить нам">
-          <span><!--call-logo--></span>
+          <span aria-hidden="true"><!--call-logo--></span>
         +7 (812) 555-05-55
         </a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -325,7 +329,7 @@
   <footer>
       <section>
         <div>
-            <a href="index.html"><img src="/img/logo-technomart.svg" alt="Техномарт" width="109" height="19" aria-label="На главную"></a>
+            <a href="index.html"><img src="/img/logo-technomart.svg" alt="Логотип Техномарт" width="109" height="19" aria-label="На главную"></a>
             <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
         </div>
         <div>
@@ -348,9 +352,9 @@
           <p>© 2010–2019 Компания «Техномарт» <br>
           Все права защищены</p> 
           <ul>
-            <li><a href="https://vk.com/htmlacademy" target="_blank" title="Наш вКонтакте" aria-label="Наш вКонтакте"></a></li>
-            <li><a href="https://www.facebook.com/htmlacademy" target="_blank" title="Наш фейсбук" aria-label="Наш фейсбук"></a></li>
-            <li><a href="https://www.instagram.com/htmlacademy/" target="_blank" title="Наш инстаграм" aria-label="Наш инстаграм"></a></li>
+              <li><a href="https://vk.com/htmlacademy" target="_blank" title="Наш вКонтакте" aria-label="Техномарт во вКонтакте"></a></li>
+              <li><a href="https://www.facebook.com/htmlacademy" target="_blank" title="Наш фейсбук" aria-label="Техномарт в фейсбук"></a></li>
+              <li><a href="https://www.instagram.com/htmlacademy/" target="_blank" title="Наш инстаграм" aria-label="Техномарт в инстаграму"></a></li>
           </ul>
           <p>
             Обратная связь:

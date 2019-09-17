@@ -1,0 +1,166 @@
+/* Позиционирование */
+ /* Блочная модель */
+ /* Типографика */
+ /* Оформление */
+  /* Анимация */
+  /* Разное */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;  
+}
+
+.header-top {
+  background-color: #293449;  
+}
+
+.logo-container {
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;  
+}
+
+.search-button {
+  width: 17px;
+  height: 17px; 
+  background-image: url("../img/icon-search.svg");
+  background-size: cover;
+  background-color: inherit;
+  border: none;
+  opacity: 0.3;
+}
+
+.search-form label {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.links-container a {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.bookmark-logo {
+  display: inline-block;
+  content: "";
+  width: 14px;
+  height: 16px;
+  background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-size: 14px 16px;
+  opacity: 0.3;
+}
+
+.cart-logo{
+  display: inline-block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/icon-cart.svg");
+  background-size: cover;
+  opacity: 0.3;
+}
+
+.order-link {
+  background-color: #63a63e;
+}
+
+.header-middle {
+  background-image: url("../img/header_background.png")
+}
+
+.slogan-container p {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.phone-link {
+  border: 3px solid #ffffff;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #ee3643;
+}
+
+.call-icon {
+  display: inline-block;
+  content: "";
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-size: 19px 19px;
+}
+
+.info-container p {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.login-link {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff
+}
+
+.login-icon {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 17px;
+  background-image: url("../img/icon-login.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.registration-link {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff
+}
+
+.header-nav {
+  box-shadow: inset 0 -5px 0 #293449;
+  background-color: #32425c;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-item a {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #ffffff;
+}
