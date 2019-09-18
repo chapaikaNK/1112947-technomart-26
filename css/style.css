@@ -20,8 +20,8 @@
   font-style: normal;
   font-weight: 700;
   src: local("PT Sans Bold"), local("PTSans-Bold"), 
-  url(../fonts/web/ptsans.woff2) format("woff2"),
-  url(../fonts/web/ptsans.woff) format("woff");
+  url(../fonts/web/ptsansbold.woff2) format("woff2"),
+  url(../fonts/web/ptsansbold.woff) format("woff");
 }
 
 @font-face {
@@ -113,6 +113,11 @@ a {
   font-weight: 400;
   line-height: 18px;
   color: #ffffff;
+}
+
+.search-form input {
+  background-color: transparent;
+  border: none;
 }
 
 .links-container a {
@@ -233,6 +238,68 @@ a {
   color: #ffffff;
 }
 
+.promo-item h3 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.promo-item .promo-btn {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.1)
+}
+
+.promo-item:nth-of-type(1) {
+  position: relative;
+  background-color: #ffbf47;
+  background-image: url("../img/icon-1.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.promo-item:nth-of-type(2) {
+  background-color: #3bbce3;
+  background-image: url("../img/icon-2.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.promo-item:nth-of-type(3) {
+  background-color: #dc91d8;
+  background-image: url("../img/icon-3.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.promo-item:nth-of-type(5) {
+  background-color: #8ed78f;
+  background-image: url("../img/icon-4.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.promo-item:nth-of-type(6) {
+  background-color: #ffc047;
+  background-image: url("../img/icon-5.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.new-item {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: block;
+  width: 60px;
+  height: 59px;
+  background-image: url("../img/new_flag.png");
+}
+
 .red-btn {
   color: #ffffff;
   font-family: Cuprum;
@@ -241,6 +308,114 @@ a {
   line-height: 18px;
   text-transform: uppercase;
   background-color: #ee3643;
+}
+
+.title-container {
+  background-color: #f9f5f0;
+}
+
+.title-container h2 {
+  color: #32425c;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.popular-item:nth-child(4) {
+  position: relative;
+}
+
+.popular-item:nth-child(4) p {
+  color: #ffffff;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+
+.popular-item h3 {
+  color: #000000;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.popular-item del {
+  color: #a9a9a9;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: line-through;
+  text-transform: uppercase;
+}
+
+.popular-item ins {
+  color: #ffffff;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #ee3643;
+}
+
+.brand-item {
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+}
+
+.services {
+  background-image: url("../img/service-bckrg.png")
+}
+
+.service-text h3 {
+  font-family: Cuprum;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.service-text p {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.tablinks {
+  width: 240px;
+  height: 61px;
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+  box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
+  background-color: #32425c;
+}
+
+.service-subtext h4 {
+  color: #32425c;
+  font-family: Cuprum;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.service-subtext p {
+  color: #000000;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .Technomart-info h3 {
