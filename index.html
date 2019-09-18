@@ -214,11 +214,11 @@
         <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         </div>
-        <div>
-          <div>
-            <button class="tablinks">Доставка</button> <!--vertical tabs switchers-->
-            <button class="tablinks">Гарантия</button>
-            <button class="tablinks">Кредит</button>
+        <div class="tab-wrapper">
+          <div class="tab">
+            <button class="tablinks" onclick="openService(event, 'Delivery')">Доставка</button> 
+            <button class="tablinks" onclick="openService(event, 'Guarantee')">Гарантия</button>
+            <button class="tablinks" onclick="openService(event, 'Credit')">Кредит</button>
           </div>
           <div id="Delivery" class="tabcontent">
             <div class="service-subtext">
@@ -227,8 +227,8 @@
                 к вашему подъезду совершенно бесплатно! <br>
                 Ведь мы неплохо заработаем, <br>
                 поднимая его на ваш этаж!</p>
-            </div>
             <img src="./img/delivery-img.png" width="468" height="261" alt="Машина доставки">
+            </div>
           </div>
           <div id="Guarantee" class="tabcontent">
             <div class="service-subtext">
@@ -238,21 +238,21 @@
                 вы всегда можете быть уверены в нашей гарантии. <br>  
                 Мы обменяем сгоревший товар на новый. <br> 
                 Дом уж восстановите как-нибудь сами.</p>
-            </div>
             <img src="./img/gaurantee-img.png" width="389" height="283" alt="100% гарантия">
+            </div>
           </div>
           <div id="Credit" class="tabcontent">
             <div class="service-subtext">
               <h4>Кредит</h4>
               <p>Залезть в долговую яму стало проще! <br> 
                 Кредитные консультанты придут вам на помощь.</p>
+              <a href="#" class="red-btn" title="Заполнить заявку">Отправить заявку</a>
+              <img src="./img/credit-img.png" width="465" height="285" alt="100% гарантия">
             </div>
-            <a href="#" title="Заполнить заявку">Отправить заявку</a>
-            <img src="./img/credit-img.png" width="465" height="285" alt="100% гарантия">
           </div>
         </div>
       </section>
-      <section class="Technomart-info">
+      <section class="technomart-info">
         <h2 class="visually-hidden">О компании</h2>
         <div class="company-info">
           <h3>Компания «Техномарт»</h3>
@@ -341,5 +341,6 @@
       </form>
       <button class="btn-close" type="button" name="Закрыть" aria-label="Закрыть всплывающее окно"></button>
     </div>
+    <script src="./js/open-service.js" ></script>
   </body>
 </html>
