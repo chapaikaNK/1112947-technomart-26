@@ -5,12 +5,69 @@
   /* Анимация */
   /* Разное */
 
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Sans"), local("PTSans-Regular"), 
+  url(../fonts/web/ptsans.woff2) format("woff2"),
+  url(../fonts/web/ptsans.woff) format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("PT Sans Bold"), local("PTSans-Bold"), 
+  url(../fonts/web/ptsans.woff2) format("woff2"),
+  url(../fonts/web/ptsans.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Cuprum Regular"), local("Cuprum-Regular"), 
+  url(../fonts/web/cuprum.woff2) format("woff2"),
+  url(../fonts/web/cuprum.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Cuprum Bold"), local("Cuprum-Bold") 
+  url(../fonts/web/cuprumbold.woff2) format("woff2"),
+  url(../fonts/web/cuprumbold.woff) format("woff");
+}  
+
+@font-face {
+  font-family: "Cuprum";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Cuprum Italic"), local("Cuprum-Italic"), 
+  url(../fonts/web/cuprumitalic.woff2) format("woff2"),
+  url(../fonts/web/cuprumitalic.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Cuprum";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Cuprum Bold Italic"), local("Cuprum-BoldItalic"), 
+  url(../fonts/web/cuprumbolditalic.woff2) format("woff2"),
+  url(../fonts/web/cuprumbolditalic.woff) format("woff");
+}
+
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 24px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 17px;
   font-weight: 400;
   color: #000000;
   background-color: #ffffff;
@@ -20,11 +77,22 @@ a {
   text-decoration: none;  
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .header-top {
   background-color: #293449;  
 }
 
-.logo-container {
+.technomart-logo {
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;  
 }
@@ -163,4 +231,212 @@ a {
   font-weight: 400;
   line-height: 17px;
   color: #ffffff;
+}
+
+.red-btn {
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+
+.Technomart-info h3 {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.company-info > p {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.trucking-companys > li {
+  font-family: Cuprum;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  list-style: none;
+}
+
+.trucking-companys > li::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+}
+
+.company-contacts > p {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.footer-top {
+  background-color: #32425c;
+}
+
+.bottom-item a {
+  color: #f1f5f7;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.footer-info p {
+  color: #f3f7f9;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.promo-list {
+  list-style: none;
+}
+
+.promo-link a {
+  color: #ffd180;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.footer-social {
+  background-color: #293449;
+}
+
+.footer-social p:first-of-type {
+  color: #ffffff;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.social-list {
+  list-style: none;
+}
+
+ .social-item {
+   position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  background-color: #212a3a;
+  border-radius: 50%;
+} 
+
+.social-item:nth-of-type(1) a {
+  position: absolute;
+  top: 13px;
+  left: 8px;
+  display: block;
+  width: 26px;
+  height: 15px;
+  background-image: url("../img/icon-vk.svg");
+  background-position: center center;
+}
+
+.social-item:nth-of-type(2) a {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  display: block;
+  width: 12px;
+  height: 22px;
+  background-image: url("../img/icon-fb.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.social-item:nth-of-type(3) a {
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  display: block;
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/icon-insta.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.footer-social .feedback {
+  color: #ffffff;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.feedback a {
+  color: #ffd180;
+}
+
+.footer-social .developed-by {
+  color: #ffffff;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.developed-by a {
+  color: #ffd180;
+}
+
+.user-contacts label,
+.user-message label {
+  color: #000000;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.user-contacts  input::-webkit-input-placeholder {
+  color: #a9a9a9;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.user-message textarea::-webkit-input-placeholder {
+  color: #a9a9a9;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.submit-btn {
+  border: none;
+}
+
+.btn-close {
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/icon-close.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+}
+
+.modal-background {
+  background-color: #f4f4f4;
 }
