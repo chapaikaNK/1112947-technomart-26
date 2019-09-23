@@ -92,7 +92,7 @@
             <a href="#" class="red-btn">Оформить заказ</a>
             <button type="button" class="white-btn">Продолжить покупки</button>
         </div>
-        <button type="button" class="btn-close" name="Закрыть" aria-label="Закрыть всплывающее окно"></button>
+        <button type="button" class="btn-close" name="close" aria-label="Закрыть всплывающее окно"></button>
       </div>
         <ul class="pages-list">
             <li class="page-link">
@@ -145,24 +145,24 @@
                   <legend>Производители:</legend>
                   <ul class="brands-list">
                     <li class="brands-item">
-                      <input type="checkbox" name="BOSCH" id="BOSCH" checked>
-                      <label for="BOSCH">BOSCH</label>
+                      <input type="checkbox" name="by-brand" id="bosch" value="bosch" checked>
+                      <label for="bosch">bosch</label>
                     </li>
                     <li class="brands-item">
-                      <input type="checkbox" name="ИНТЕРСКОЛ" id="ИНТЕРСКОЛ">
-                      <label for="ИНТЕРСКОЛ">ИНТЕРСКОЛ</label>
+                      <input type="checkbox" name="by-brand" id="интерскол" value="интерскол">
+                      <label for="интерскол">интерскол</label>
                     </li>
                     <li class="brands-item">
-                      <input type="checkbox" name="MAKITA" id="MAKITA" checked>
-                      <label for="MAKITA">MAKITA</label>
+                      <input type="checkbox" name="by-brand" id="makita" value="makita" checked>
+                      <label for="makita">makita</label>
                     </li>
                     <li class="brands-item">
-                      <input type="checkbox" name="Dewalt" id="Dewalt">
-                      <label for="Dewalt">Dewalt</label>
+                      <input type="checkbox" name="by-brand" id="dewalt" value="dewalt">
+                      <label for="dewalt">dewalt</label>
                     </li>
                     <li class="brands-item">
-                      <input type="checkbox" name="Hitachi" id="Hitachi">
-                      <label for="Hitachi">Hitachi</label>
+                      <input type="checkbox" name="by-brand" id="hitachi" value="hitachi">
+                      <label for="hitachi">hitachi</label>
                     </li>
                   </ul>
                 </fieldset>
@@ -172,17 +172,17 @@
                 <legend>Питание:</legend>
                 <ul class="powered-list">
                   <li class="powered-item">
-                    <input type="radio" name="power by" id="Аккумуляторные" >
-                    <label for="Аккумуляторные">Аккумуляторные</label>
+                    <input type="radio" name="power-by" value="battery" id="by-battery">
+                    <label for="by-battery">Аккумуляторные</label>
                   </li>
                   <li class="powered-item">
-                    <input type="radio" name="power by" id="Сетевые">
-                    <label for="Сетевые">Сетевые</label>
+                    <input type="radio" name="power-by" value="mains" id="by-mains">
+                    <label for="by-mains">Сетевые</label>
                   </li>
                 </ul>
               </fieldset>
             </div>
-            <button type="submit" class="white-btn" name="Показать" title="Показать">
+            <button type="submit" class="white-btn" name="show-results" title="Показать">
               Показать
             </button>
           </form>
@@ -232,11 +232,11 @@
             <div class="content-item">
                 <span class="new-item"></span>
               <div class="active-container"> 
-                <button type="button" name="Купить" value="Добавить в карзину" title="Купить">
+                <button type="button" name="cart-add" value="Добавить в карзину" title="Купить">
                 <span class="cart-logo"></span>
                 Купить
                 </button>
-                <button type="button" name="В закладки" value="Добавить в закладки" title="В закладки">
+                <button type="button" name="bookmarks-add" value="Добавить в закладки" title="В закладки">
                   В закладки
                 </button>
               </div> <!--show :active-->
