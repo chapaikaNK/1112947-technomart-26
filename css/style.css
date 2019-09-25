@@ -82,6 +82,11 @@ a {
   text-decoration: none;  
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -115,16 +120,40 @@ a {
 }
 
 .technomart-logo {
-  background-color: #ee3643;  
+  width: 220px;
+  background-color: #ee3643;
+  background-image: url("../img/logo-technomart.svg");
+  background-repeat: no-repeat;
+  background-position: 55px 13px;
+  background-size: 109px 19px;
+}
+
+.technomart-logo a {
+  display: block; 
+  width: auto;
+  height: 100%;
+}
+
+.search-form {
+  display: block;
+  width: 270px;
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  padding-left: 17px;
 }
 
 .search-button {
-  padding: 0;
+  vertical-align: bottom;
+  display: inline-block;
   width: 17px;
-  height: 17px; 
+  height: 17px;
+  padding: 0px; 
+  margin-right: 10px;
+  font-size: 0px;
   background-image: url("../img/icon-search.svg");
   background-size: cover;
-  background-color: inherit;
+  background-color: transparent;
   border: none;
   opacity: 0.3;
 }
@@ -138,11 +167,20 @@ a {
 }
 
 .search-form input {
+  padding: 0px;
   background-color: transparent;
   border: none;
 }
 
+.links-container {
+  width: 450px;
+  padding: 0px;
+  font-size: 0px;
+}
+
 .links-container a {
+  display: inline-block;
+  width: 150px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 17px;
   font-weight: 400;
@@ -151,11 +189,19 @@ a {
   text-decoration: none;
 }
 
+.bookmark-link {
+  padding-top: 13px;
+  padding-bottom: 12px;
+  padding-left: 17px;
+}
+
 .bookmark-logo {
+  vertical-align: top;
   display: inline-block;
-  content: "";
   width: 14px;
   height: 16px;
+  margin-right: 9px;
+  font-size: 0px;
   background-image: url("../img/icon-bookmark.svg");
   background-repeat: no-repeat;
   background-size: 14px 16px;
@@ -166,18 +212,31 @@ a {
   background-color: #ee3643;
 }
 
+.cart-link {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 18px;
+}
+
 .cart-logo{
   display: inline-block;
-  content: "";
   width: 15px;
   height: 15px;
+  margin-right: 12px;
   background-image: url("../img/icon-cart.svg");
   background-size: cover;
   opacity: 0.3;
 }
 
 .order-link {
+  padding-top: 13px;
+  padding-bottom: 12px;
+  padding-left: 20px;
   background-color: #63a63e;
+}
+
+.header-middle {
+  min-height: 278px;
 }
 
 .header-middle .container {
@@ -188,14 +247,19 @@ a {
 
 .header-middle,
 .perforator-article {
-  background-image: url("../img/gray-background.png")
+  background-color: #f4f7f9;
 }
 
 .slogan-container {
   width: 300px;
+  padding-top: 48px;
+  padding-bottom: 40px;
+  padding-left: 52px;
+  padding-right: 50px; 
 }
 
 .slogan-container p {
+  margin: 0;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 16px;
   font-style: italic;
@@ -203,7 +267,31 @@ a {
   color: #ee3643;
 }
 
+.info-container {
+  width: 300px;
+  padding-top: 45px;
+  padding-bottom: 39px;
+  padding-right: 29px;
+}
+
+.info-container p {
+  margin: 0px;
+  padding-left: 10px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #32425c;
+}
+
 .phone-link {
+  display: block;
+  width: 270px;
+  padding-top: 10px;
+  padding-left: 12px;
+  margin-bottom: 4px;
+  padding-bottom: 8px;
+  margin-bottom: 4px;
   border: 3px solid #ffffff;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
@@ -213,34 +301,30 @@ a {
 }
 
 .call-icon {
+  vertical-align: middle;
   display: inline-block;
-  content: "";
   width: 19px;
   height: 19px;
+  margin-right: 35px;
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   background-size: 19px 19px;
 }
 
-.info-container {
-  width: 300px;
-  padding: 10px; /* потом убрать */
-}
-
-.info-container p {
-  font-family: "Cuprum", "Arial", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #32425c;
-}
-
 .login-links {
   width: 300px;
-  padding: 10px; /* потом убрать */
+  padding-top: 45px;
+  padding-bottom: 67px;
+  padding-left: 19px;
 }
 
 .login-link {
+  display: inline-block;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  padding-left: 14px;
+  padding-right: 27px;
+  margin-right: 5px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   font-weight: 400;
@@ -250,15 +334,22 @@ a {
 }
 
 .login-icon {
+  vertical-align: middle;
   display: inline-block;
   width: 20px;
   height: 17px;
+  margin-right: 9px;
   background-image: url("../img/icon-login.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .registration-link {
+  display: inline-block;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  padding-left: 23px;
+  padding-right: 23px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   font-weight: 400;
@@ -318,14 +409,19 @@ a {
 
 .nav-list {
   display:flex;
-  justify-content: space-between;
-  min-height: 60px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .nav-item a {
+  display: block;
+  width: auto;
+  padding-top: 20px;
+  padding-bottom: 23px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 17px;
   font-weight: 400;
