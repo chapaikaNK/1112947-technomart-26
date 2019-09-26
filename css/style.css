@@ -104,6 +104,11 @@ img {
   padding: 0 10px;
 }
 
+.clearfix {
+  height: 0px;
+  clear: both;
+}
+
 .main-header {
   display:flex;
   flex-direction: column;
@@ -733,8 +738,7 @@ img {
 }
 
 .services {
-  height: 522px;
-  background-image: url("../img/service-bckrg.png");
+  background-color: #f4f7f9;
 }
 
 .service-text h3 {

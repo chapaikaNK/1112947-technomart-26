@@ -132,7 +132,7 @@
         </div>
         <div class="popular-items-wrapper">
           <div class="popular-item">
-            <img src="./img/Perforator_4.jpg" alt="Bosch 9000" width="218" height="170">
+            <img src="./img/perforator_4.jpg" alt="Bosch 9000" width="218" height="170">
             <h3>Перфоратор BOSCH <br>
               BFG 9000
             </h3>
@@ -140,7 +140,7 @@
             <ins>25500 Р.</ins>
           </div>
           <div class="popular-item">
-            <img src="./img/Perforator_1.jpg" alt="Bosch 3000" width="218" height="170">
+            <img src="./img/perforator_1.jpg" alt="Bosch 3000" width="218" height="170">
             <h3>Перфоратор BOSCH <br>
                 BFG 3000
             </h3>
@@ -148,7 +148,7 @@
             <ins>15500 Р.</ins>
           </div>
           <div class="popular-item">
-            <img src="./img/Perforator_2.jpg" alt="Bosch 6000" width="218" height="170">
+            <img src="./img/perforator_2.jpg" alt="Bosch 6000" width="218" height="170">
             <h3>Перфоратор BOSCH <br>
               BFG 6000
             </h3>
@@ -156,7 +156,7 @@
             <ins>25500 Р.</ins>
           </div >
           <div class="popular-item">
-            <img src="./img/Perforator_3.jpg" alt="Bosch 2000" width="218" height="170">
+            <img src="./img/perforator_3.jpg" alt="Bosch 2000" width="218" height="170">
             <span class="new-item"></span>
             <h3>Перфоратор BOSCH <br>
               BFG 2000
@@ -188,7 +188,7 @@
           </div>
           <div class="brand-item">
             <a href="#">
-              <img src="./img/интерскол.png" width="200" height="88" alt="Интерскол" aria-label="Производитель Интерскол">
+              <img src="./img/interskol.png" width="200" height="88" alt="Интерскол" aria-label="Производитель Интерскол">
             </a>
           </div>
           <div class="brand-item">
@@ -222,11 +222,11 @@
         </div>
         <div class="tab-wrapper">
           <div class="tab">
-            <button class="tablinks active" onclick="openService(event, 'Delivery')">Доставка</button> 
-            <button class="tablinks" onclick="openService(event, 'Guarantee')">Гарантия</button>
-            <button class="tablinks" onclick="openService(event, 'Credit')">Кредит</button>
+            <button class="tablinks active" onclick="openService(event, 'delivery')">Доставка</button> 
+            <button class="tablinks" onclick="openService(event, 'guarantee')">Гарантия</button>
+            <button class="tablinks" onclick="openService(event, 'credit')">Кредит</button>
           </div>
-          <div id="Delivery" class="tabcontent active">
+          <div id="delivery" class="tabcontent active">
             <div class="service-subtext">
               <h4>Доставка</h4>
               <p>Мы с удовольствием доставим ваш товар прямо <br>
@@ -236,7 +236,7 @@
             <img src="./img/delivery-img.png" width="468" height="261" alt="Машина доставки">
             </div>
           </div>
-          <div id="Guarantee" class="tabcontent">
+          <div id="guarantee" class="tabcontent">
             <div class="service-subtext">
               <h4>Гарантия</h4>
               <p>Если купленный у нас товар поломается или заискрит, <br> 
@@ -247,7 +247,7 @@
             <img src="./img/gaurantee-img.png" width="389" height="283" alt="100% гарантия">
             </div>
           </div>
-          <div id="Credit" class="tabcontent">
+          <div id="credit" class="tabcontent">
             <div class="service-subtext">
               <h4>Кредит</h4>
               <p>Залезть в долговую яму стало проще! <br> 
@@ -256,6 +256,7 @@
               <img src="./img/credit-img.png" width="465" height="285" alt="100% гарантия">
             </div>
           </div>
+          <div class="clearfix"></div>
         </div>
       </section>
       <section class="technomart-info container">
@@ -291,7 +292,9 @@
     <footer>
       <section class="footer-top">
         <div class="footer-nav container">
-          <a href="index.html" class="technomart-logo" aria-label="На главную"><img src="/img/logo-technomart.svg" alt="Логотип Техномарт" width="138" height="23"></a> 
+          <div class="technomart-logo">
+            <a href="index.html" title="На главную" aria-label="На главную страницу"></a>
+          </div> 
           <ul class="footer-nav-list">
             <li class="nav-item bottom-item"><a href="#">Компания</a></li>
             <li class="nav-item bottom-item"><a href="#">Новости</a></li>
@@ -355,5 +358,6 @@
       <button class="btn-close" type="button" name="close" aria-label="Закрыть всплывающее окно"></button>
     </div>
     <script src="./js/open-service.js" ></script>
+    <div></div>
   </body>
 </html>
