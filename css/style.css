@@ -131,6 +131,7 @@ img {
   background-repeat: no-repeat;
   background-position: 55px 13px;
   background-size: 109px 19px;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
 }
 
 .technomart-logo a {
@@ -418,15 +419,16 @@ img {
   flex-direction: row;
   justify-content: space-around;
   margin: 0;
-  padding: 0;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 23px;
+  padding-left: 21px;
   list-style: none;
 }
 
 .nav-item a {
   display: block;
   width: auto;
-  padding-top: 20px;
-  padding-bottom: 23px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 17px;
   font-weight: 400;
@@ -445,159 +447,239 @@ img {
 }
 
 .promo {
-  margin-top: 60px;
+  margin-top: 59px;
+  margin-bottom: 32px;
 }
 
 .promo-item {
+  position: relative;
+  overflow: hidden;
   width: 300px;
   height: 123px;
+  padding-top: 21px;
+  padding-left: 22px;
+  padding-bottom: 22px;
   margin-bottom: 20px;
 }
 
 .promo-item h3 {
   margin: 0;
+  margin-bottom: 12px;
   color: #ffffff;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
+  letter-spacing: 0.8px;
 }
 
 .promo-item .promo-btn {
+  position: absolute;
+  display: inline-block;
+  left: 25px;
+  bottom: 23px;
+  min-width: 135px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #ffffff;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
   background-color: rgba(0, 0, 0, 0.1)
 }
 
 .slider-container {
   position: relative;
   width: 620px;
+  height: 266px;
 }
 
-.slider-1,
-.slider-2 {
-  min-height: 266px;
-  padding: 25px 20px;
-  color: #ffffff;
-  background-image: url("../img/slider-1.jpg");
-  background-repeat: no-repeat;
-  background-size: 620px 266px;
+.slider-container > input {
+  display: none;
 }
 
-.slider-1 h3,
-.slider-2 h3 {
+.slider {
+  position: relative;
+  width: inherit;
+  height: inherit;
+  overflow: hidden;
+
+}
+
+.slides {
+	position: absolute;
+  width: inherit;
+  height: inherit;
+  padding-top: 24px;
+  padding-left: 25px;
+  opacity: 0;
+  z-index: 0;
+  -webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+.slider-slogan p {
   margin: 0;
-  margin-bottom: 6px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  color: #ffffff;
+}
+
+.slider-slogan p:nth-of-type(1) {
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
 }
 
-.slider-1 p {
-  margin: 0;
+.slider-slogan p:nth-of-type(2) {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
-.slider-2 {
-  display: none;
+.slide1 {
+  background-image: url("../img/slider-1.jpg")
 }
 
-.slider-switchers {
+.slide2 {
+  background-image: url("../img/slider-2.jpg")
+}
+
+.slider-container .controls {
   position: absolute;
-  bottom: 112px;
+  bottom: 32px;
+  left: 296px;
+}
+
+.slider-container .arrow-buttons {
+  position: absolute;
+  bottom: 109px;
+  left: 0;
   width: 100%;
-  padding-left: 20px;
 }
 
-.prev-btn {
+.arrow-buttons label {
+  position: relative;
   display: inline-block;
-  width: 22px;
   height: 40px;
-  margin-right: 531px;
-  background-image: url("../img/icon-left.svg");
-  background-repeat: no-repeat;
+  width: 22px;
   background-color: transparent;
   cursor: pointer;
+  z-index: 3;
 }
 
-.next-btn {
-  display: inline-block;
-  width: 22px;
-  height: 40px;
-  background-image: url("../img/icon-right.svg");
-  background-repeat: no-repeat;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.catalog-btn {
-  position: absolute;
-  display: block;
-  top: 206px;
+.arrow-buttons label:nth-of-type(1) {
   left: 25px;
+  background-image: url("../img/icon-left.svg");
 }
 
-.slider-dots {
-  position: absolute;
-  left: 50%;
-  bottom: 36px;
+.arrow-buttons label:nth-of-type(2) {
+  left: 552px;
+  background-image: url("../img/icon-right.svg");
 }
 
-.slider-dot {
+.controls label {
+  position: relative;
   display: inline-block;
   height: 10px;
   width: 10px;
   background-color: #ffffff;
+  border: 2px solid #ffffff; 
   border-radius: 50%;
   cursor: pointer;
+  z-index: 3;
+  -webkit-transition: background ease-in-out .5s;
+	-moz-transition: background ease-in-out .5s;
+	-o-transition: background ease-in-out .5s;
+	transition: background ease-in-out .5s;
 }
 
-.promo-item:nth-of-type(1) {
+.controls label:nth-of-type(1) {
+  margin-right: 6px;
+}
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2 {
+	opacity: 1;
+	z-index: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+ 
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2) {
+	background-color: #ee3643;
+}
+
+.catalog-btn {
+  position: absolute;
+  top: 206px;
+  left: 25px;
+  display: block;
+  padding: 10px 0;
+  padding-right: 45px;
+  padding-left: 49px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ee3643;
+
+  z-index: 5;
+}
+
+.promo-item.materials {
   position: relative;
   background-color: #ffbf47;
   background-image: url("../img/icon-1.svg");
-  background-position: top right;
+  background-position: 213px 31px;
   background-repeat: no-repeat;
 }
 
-.promo-item:nth-of-type(2) {
+.promo-item.instruments {
   background-color: #3bbce3;
   background-image: url("../img/icon-2.svg");
-  background-position: top right;
+  background-position: 197px 33px;
   background-repeat: no-repeat;
 }
 
-.promo-item:nth-of-type(3) {
+.promo-item.technics {
   background-color: #dc91d8;
   background-image: url("../img/icon-3.svg");
-  background-position: top right;
+  background-position: 191px 31px;
   background-repeat: no-repeat;
 }
 
-.promo-item:nth-of-type(5) {
+.promo-item.discounts {
   background-color: #8ed78f;
   background-image: url("../img/icon-4.svg");
-  background-position: top right;
+  background-position: 196px 26px;
   background-repeat: no-repeat;
 }
 
-.promo-item:nth-of-type(6) {
+.promo-item.delivery {
   background-color: #ffc047;
   background-image: url("../img/icon-5.svg");
-  background-position: top right;
+  background-position: 191px 32px;
   background-repeat: no-repeat;
 }
 
 .new-item {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: -1px;
+  right: -1px;
   display: block;
   width: 60px;
   height: 59px;
+  text-indent: -1000px;
   background-image: url("../img/new_flag.png");
+  z-index: 15;
 }
 
 .red-btn {
@@ -620,11 +702,15 @@ img {
 }
 
 .title-container {
+  margin: 0px;
+  margin-bottom: 17px;
+  padding-top: 26px;
+  padding-right: 24px;
+  padding-bottom: 29px;
+  padding-left: 28px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 21px;
   background-color: #f9f5f0;
 }
 
@@ -635,6 +721,8 @@ img {
 }
 
 .title-container h2 {
+  margin: 0;
+  margin-top: 4px;
   color: #32425c;
   font-size: 30px;
   font-weight: 400;
@@ -642,10 +730,19 @@ img {
   text-transform: uppercase;
 }
 
+.title-container .red-btn {
+  padding: 10px 55px;
+  padding-right: 54px;
+}
+
 .popular-items-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.popular-item:not(:nth-child(4n + 4)) {
+  margin-right: 20px;
 }
 
 .popular-item,
@@ -658,10 +755,12 @@ img {
 .popular-item,
 .content-item {
   position: relative;
+  text-align: center;
 }
 
-.popular-item:nth-of-type(4) p,
+.popular-item:nth-of-type(4n + 4) p,
 .content-item p {
+  margin: 0px;
   color: #ffffff;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
@@ -671,8 +770,14 @@ img {
   background-color: #ee3643;
 }
 
+.popular-item:nth-of-type(4n + 4) h3 {
+  margin-bottom: 40px;
+}
+
 .popular-item h3,
 .content-item h3 {
+  margin: 0;
+  margin-bottom: 13px;
   color: #000000;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -680,8 +785,15 @@ img {
   line-height: 20px;
 }
 
+.popular-item img,
+.content-item img {
+ margin-bottom: 4px;
+}
+
 .popular-item del,
 .content-item del {
+  display: block;
+  margin-bottom: 9px;
   color: #a9a9a9;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
@@ -691,8 +803,33 @@ img {
   text-transform: uppercase;
 }
 
-.popular-item ins,
-.content-item ins {
+.popular-item .price,
+.content-item .price {
+  position: relative;
+  width: 141px;
+  margin: 10px auto;
+  margin-bottom: 17px;
+  padding: 10px 30px;
+  padding-bottom: 11px;
+  text-decoration: none;
+  color: white;
+  background: #ee3643;
+  border-radius: 3px;
+}
+
+.popular-item .price::after,
+.content-item .price::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border: 20px solid white;
+  border-left-color: #ee3643;
+}
+
+.price ins {
   color: #ffffff;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
@@ -700,12 +837,12 @@ img {
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: #ee3643;
 }
 
 .popular-brands.container {
   width: 960px;
   margin: 0 auto;
+  margin-bottom: 69px;
   padding: 0 10px;
 }
 
@@ -714,6 +851,11 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.red-btn-brands.red-btn {
+  padding-left: 69px;
+  padding-right: 70px;
 }
 
 .brand-items-wrapper {
@@ -725,7 +867,11 @@ img {
 }
 
 .brand-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 220px;
+  min-height: 145px;
   margin-bottom: 20px;
   border: 1px solid #eaeaea;
   background-color: #ffffff;
@@ -735,13 +881,22 @@ img {
   width: 960px;
   margin: 0 auto;
   padding: 0 10px;
+
 }
 
-.services {
+.services-wrapper {
+  margin-bottom: 80px;
   background-color: #f4f7f9;
 }
 
+.service-text{
+  padding-top: 62px;
+  margin-bottom: 72px;
+}
+
 .service-text h3 {
+  margin: 0px;
+  margin-bottom: 26px;
   font-family: Cuprum;
   font-size: 30px;
   font-weight: 400;
@@ -750,8 +905,9 @@ img {
 }
 
 .service-text p {
+  margin: 0px;
   font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 24px;
 }
@@ -765,12 +921,13 @@ img {
 .tablinks {
   display: block;
   width: 100%;
-  height: 61px;
+  padding: 15px 0px 16px 22px;
   color: #ffffff;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
+  text-align: left;
   box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
   border: none;
   background-color: #32425c;
@@ -794,7 +951,7 @@ img {
   float: left;
   width: 619px;
   border-left: none;
-  height: 282px;
+  min-height: 282px;
 }
 
 .tabcontent:nth-child(3),
@@ -809,7 +966,8 @@ img {
 }
 
 .service-subtext h4 {
-  margin-top: 0;
+  margin: 0;
+  margin-bottom: 22px;
   color: #32425c;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 36px;
@@ -819,6 +977,7 @@ img {
 }
 
 .service-subtext p {
+  margin: 0px;
   color: #000000;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
@@ -830,6 +989,7 @@ img {
   width: 960px;
   margin: 0 auto;
   padding: 0 10px;
+  margin-bottom: 86px;
 }
 
 .technomart-info {
@@ -839,6 +999,8 @@ img {
 }
 
 .technomart-info h3 {
+  margin: 0px;
+  margin-bottom: 25px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   font-weight: 400;
@@ -851,13 +1013,26 @@ img {
 }
 
 .company-info > p {
+  margin: 0px;
+  margin-bottom: 25px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
 }
 
+.company-info p:nth-child(3) {
+  margin-bottom: 21px;
+}
+
+.trucking-companys {
+  margin: 0px;
+  margin-bottom: 37px;
+  padding: 0px;
+}
+
 .trucking-companys > li {
+  margin-bottom: 20px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -865,13 +1040,27 @@ img {
   list-style: none;
 }
 
+.trucking-companys > li:last-child {
+  margin-bottom: 0px;
+}
+
 .trucking-companys > li::before {
   content: "";
+  vertical-align: middle;
   display: inline-block;
+  top: 1px;
   margin-right: 10px;
   width: 25px;
   height: 2px;
   background-color: #ee3643;
+}
+
+.trucking-btn.red-btn {
+  display: inline-block;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .company-contacts {
@@ -880,6 +1069,7 @@ img {
 
 
 .company-contacts > p {
+  margin: 0px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   font-weight: 400;

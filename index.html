@@ -73,56 +73,59 @@
       <div class="container">
         <section class="promo">
           <h2 class="visually-hidden">Техномарт промо</h2>
-          <div class="promo-item">
+          <div class="promo-item materials">
             <h3>Материалы</h3>
             <a href="#" class="promo-btn">на любой вкус</a>
             <span class="new-item"></span>
           </div>
-          <div class="promo-item">
+          <div class="promo-item instruments">
             <h3>Инструмент</h3>
             <a href="#" class="promo-btn">На все случаи</a>
             <span></span>
           </div>
-          <div class="promo-item">
+          <div class="promo-item technics">
             <h3>Техника</h3>
             <a href="#" class="promo-btn">Для стройки</a>
             <span aria-hidden="true"></span>
           </div>
           <div class="slider-container"> <!--slider container-->
-            <div class="slider-1">
-              <div class="slider-text"> 
-                <h3>Дрели</h3>
-                <p>Соседям на радость!</p>
-              </div>
+            <input type="radio" name="point" id="slide1" checked>
+            <input type="radio" name="point" id="slide2">
+            <div class="slider">
+                <div class="slides slide1">
+                  <div class="slider-slogan">
+                    <p>Дрели</p>
+                    <p>Соседям на радость!</p>
+                  </div>
+                </div>
+                <div class="slides slide2">
+                  <div class="slider-slogan">
+                    <p>Перфораторы</p>
+                    <p>Настоящие мужские игрушки</p>
+                  </div>
+                </div>
             </div>
-            <div class="slider-2">
-              <div> 
-                <h3>Перфораторы</h3>
-                <p>Настоящие мужские игрушки</p>
-              </div>
-              <img src="./img/slider-2.jpg" width="620" height="266" alt="Перфораторы">
+            <div class="controls">
+                <label for="slide1" aria-hidden="true"></label>
+                <label for="slide2" aria-hidden="true"></label>
             </div>
-            <div class="slider-switchers">
-              <a class="prev-btn"></a> 
-              <a class="next-btn"></a>
+            <div class="arrow-buttons">
+              <label for="slide1" aria-hidden="true"></label>
+              <label for="slide2" aria-hidden="true"></label>
             </div>
-              <a href="catalog.html" class="red-btn catalog-btn">Открыть каталог</a>
-            <div class="slider-dots">
-              <span class="slider-dot"></span>
-              <span class="slider-dot"></span>
-            </div>
+            <a href="catalog.html" class="catalog-btn">открыть каталог</a>
           </div>
           <div class="promo-item-flex">
-            <div class="promo-item">
+            <div class="promo-item discounts">
               <h3>Скидки 50%</h3>
               <a href="#" class="promo-btn">На 350 товаров</a>
             </div>
-            <div class="promo-item">
+            <div class="promo-item delivery">
               <h3>Доставка</h3>
               <a href="#" class="promo-btn">Бесплатно</a>
-              <span aria-hidden="true"><!--icon-5--></span>
+              <span aria-hidden="true"></span>
             </div>
-          </div>  
+          </div>
         </section>
       </div>  
       <section class="popular-items container">
@@ -137,7 +140,9 @@
               BFG 9000
             </h3>
             <del>32500 Р.</del>
-            <ins>25500 Р.</ins>
+            <div class="price">
+              <ins>25500 Р.</ins>
+            </div> 
           </div>
           <div class="popular-item">
             <img src="./img/perforator_1.jpg" alt="Bosch 3000" width="218" height="170">
@@ -145,7 +150,9 @@
                 BFG 3000
             </h3>
             <del>22500 Р.</del>
-            <ins>15500 Р.</ins>
+            <div class="price">
+              <ins>15500 Р.</ins>
+            </div>
           </div>
           <div class="popular-item">
             <img src="./img/perforator_2.jpg" alt="Bosch 6000" width="218" height="170">
@@ -153,7 +160,9 @@
               BFG 6000
             </h3>
             <del>30500 Р.</del>
-            <ins>25500 Р.</ins>
+            <div class="price">
+              <ins>25500 Р.</ins>
+            </div>
           </div >
           <div class="popular-item">
             <img src="./img/perforator_3.jpg" alt="Bosch 2000" width="218" height="170">
@@ -161,14 +170,16 @@
             <h3>Перфоратор BOSCH <br>
               BFG 2000
             </h3>
-            <p>12500 Р.</p>
+            <div class="price">
+              <p>12500 Р.</p>
+            </div>
           </div>
         </div>
       </section>
       <section class="popular-brands container">
         <div class="title-container">
           <h2>Популярные производители</h2>
-          <a class="red-btn" href="#">Все производители</a>
+          <a class="red-btn-brands red-btn" href="#">Все производители</a>
         </div>
         <div class="brand-items-wrapper">
           <div class="brand-item">
@@ -214,6 +225,7 @@
         </div>
       </section>
       <section class="services container">
+        <div class="services-wrapper">
         <h2 class="visually-hidden">Услуги</h2>
         <div class="service-text">
         <h3>Сервисы</h3>
@@ -258,6 +270,7 @@
           </div>
           <div class="clearfix"></div>
         </div>
+        </div>
       </section>
       <section class="technomart-info container">
         <h2 class="visually-hidden">О компании</h2>
@@ -272,7 +285,7 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a href="#" class="red-btn">Подробнее о компании</a>
+          <a href="#" class="trucking-btn red-btn">Подробнее о компании</a>
         </div>
         <div class="company-contacts">
           <h3>Контакты </h3>
