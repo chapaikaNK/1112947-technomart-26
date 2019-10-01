@@ -12,22 +12,38 @@
         <div class="container">
           <div class="technomart-logo-wrapper">
             <div class="technomart-logo">
-              <a href="#"></a>
+              <a href="index.html">
+                <img src="./img/logo-technomart.svg" alt="Логотип Техномарт" width="109" height="19">
+              </a>
             </div>
           </div>
-          <form class="search-form"  action="https://echo.htmlacademy.ru" method="get">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
             <button type="submit" class="search-button" value="Найти" name="search-btn" aria-label="Поиск">
+              <span class="search-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                  <path class="search-button-svg" fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+                </svg>
+              </span>
             </button>
-            <label for="search-field">Поиск:</label>
-            <input type="text" name="search" id="search-field" aria-label="Поле поиска">
+            <input type="text" name="search" id="search-field" aria-label="Поле поиска" placeholder="Поиск:" autocomplete="off">
           </form>
           <div class="links-container">
             <a href="#" class="bookmark-link">
-            <span class="bookmark-logo" aria-hidden="true"></span>
+              <span class="bookmark-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+                  <path class="bookmark-svg" fill="#ffffff" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/>
+                </svg>
+              </span>
               Закладки: 0
             </a> 
             <a href="#" class="cart-link">
-            <span class="cart-logo" aria-hidden="true"></span>
+            <span class="cart-logo" aria-hidden="true">
+              <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
+                <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+                <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+              </svg>
+            </span>
               Корзина: 0
             </a>
             <a href="#" class="order-link">Оформить заказ</a>
@@ -50,7 +66,12 @@
           </div>
           <div class="login-links">
             <a href="#" class="login-link" title="Вход">
-              <span class="login-icon" aria-hidden="true"></span>
+              <span class="login-icon" aria-hidden="true">
+                <svg class="login-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                  <path class="login-svg" fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/>
+                  <path class="login-svg" fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
+                </svg>
+              </span>
             Войти</a>
             <a href="#" class="registration-link" title="Зарегистрироваться">Регистрация</a> 
           </div>
@@ -185,42 +206,42 @@
         </div>
         <div class="brand-items-wrapper">
           <div class="brand-item">
-            <a href="#">
+            <a class="brand-item-link" href="#">
               <img src="./img/bosch.png" width="126" height="37" alt="Bosch" aria-label="Производитель Bosch">
             </a>
           </div>
           <div class="brand-item">
-            <a href="#">
+            <a class="brand-item-link" href="#">
               <img src="./img/makita.png" width="123" height="40" alt="Makita" aria-label="Производитель Makita">
             </a>
           </div>
           <div class="brand-item">
-            <a href="#">
+            <a class="brand-item-link" href="#">
               <img src="./img/dewalt.png" width="146" height="44" alt="Dewalt" aria-label="Производитель Dewalt">
             </a>
           </div>
           <div class="brand-item">
-            <a href="#">
+            <a class="brand-item-link" href="#">
               <img src="./img/interskol.png" width="200" height="88" alt="Интерскол" aria-label="Производитель Интерскол">
             </a>
           </div>
           <div class="brand-item">
-            <a href="#">
+            <a class="brand-item-link" href="#">
               <img src="./img/hitachi.png" width="169" height="31" alt="Hitachi" aria-label="Производитель Hitachi">
             </a>
           </div>
           <div class="brand-item">
-            <a href="#">
+            <a class="brand-item-link" href="#">
               <img src="./img/lg.png" width="121" height="73" alt="LG" aria-label="Производитель LG">
             </a>
           </div>
           <div class="brand-item">
-            <a href="#">
+            <a class="brand-item-link" href="#">
               <img src="./img/aeg.png" width="151" height="96" alt="AEG" aria-label="Производитель AEG">
             </a>
           </div>
           <div class="brand-item">
-            <a href="#">
+            <a class="brand-item-link" href="#">
               <img src="./img/metabo.png" width="204" height="69" alt="Metabo" aria-label="Производитель Metabo">
             </a>
           </div>
