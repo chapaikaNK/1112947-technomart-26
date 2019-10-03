@@ -2422,7 +2422,7 @@ article p {
 
 
 .modal-cart {
-  display: ;
+  display: none;
   width: 620px;
   height: 282px;
   margin: 0 auto;
