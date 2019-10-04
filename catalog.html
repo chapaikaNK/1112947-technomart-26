@@ -19,7 +19,7 @@
         </div>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
           <button type="submit" class="search-button" value="Найти" name="search-btn" aria-label="Поиск">
-            <span class="search-icon">
+            <span class="search-icon" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
                 <path class="search-button-svg" fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
               </svg>
@@ -532,7 +532,7 @@
             </div>
             <div class="content-item">
               <div class="actions">
-                <a href="#" class="buy">
+                <a href="#" class="byu">
                   <span class="cart-logo">
                     <svg class="cart-svg" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
                       <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
@@ -645,21 +645,22 @@
         </div>  
     </section>
   </footer>
-  <div></div>
-  <div class="modal-cart">
-    <!--модальное окно-->
-    <div class="modal-top">
+  <section class="modal modal-cart">
+    <div class="modal-top-cart">
       <p>
-        <span class="check-mark"></span>
+        <span class="check-mark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66"><circle fill="#63A63E" cx="33" cy="33" r="33"/><path fill="#FFF" d="M49.641 21.066a1.003 1.003 0 0 0-1.414 0L29.788 39.504a1.003 1.003 0 0 1-1.414 0l-8.14-8.139a1.003 1.003 0 0 0-1.414 0L15.285 34.9a1.003 1.003 0 0 0 0 1.414l13.089 13.09a1.003 1.003 0 0 0 1.414 0l3.536-3.536 1.414-1.414 18.438-18.438a1.003 1.003 0 0 0 0-1.414l-3.535-3.536z"/>
+          </svg>
+        </span>
         Товар добавлен в корзину!
       </p>
     </div>
-    <div class="modal-bottom">
-      <a href="#" class="red-btn">Оформить заказ</a>
-      <button type="button" class="white-btn">Продолжить покупки</button>
+    <div class="modal-bottom-cart">
+      <a href="#" class="red-btn checkout">Оформить заказ</a>
+      <button type="button" class="white-btn proceed">Продолжить покупки</button>
     </div>
-    <button type="button" class="btn-close" name="close" aria-label="Закрыть всплывающее окно"></button>
-  </div>
-  <script src="./js/scripts.js"></script>
+    <button class="modal-close" type="button" aria-label="Закрыть всплывающее окно"></button>
+  </section>
+  <script src="./js/catalogScripts.js"></script>
 </body>
 </html>
