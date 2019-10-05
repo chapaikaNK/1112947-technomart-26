@@ -1406,7 +1406,8 @@ img {
 
 .brand-item a {
   display: block;
-  margin: auto;
+  box-sizing: border-box; /* баг в IE*/
+  max-width: 100%;  /* баг в IE*/
 }
 
 .brand-item:hover {
@@ -1565,7 +1566,7 @@ img {
   width: 960px;
   margin: 0 auto;
   padding: 0 10px;
-  margin-bottom: 86px;
+  margin-bottom: 80px;
 }
 
 .technomart-info {
@@ -1665,7 +1666,7 @@ img {
 
 .feedback-link{
   width: 300px;
-  padding-left: 64px;
+  padding-left: 63px;
   padding-right: 59px;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -1821,7 +1822,7 @@ img {
 }
 
 .bottom-item:not(:nth-of-type(5n + 5)) {
-  margin-right: 60px;
+  margin-right: 59px;
 }
 
 .bottom-item a {
@@ -1857,7 +1858,7 @@ img {
 }
 
 .promo-link:not(:nth-of-type(4n + 4)) {
-  margin-right: 60px;
+  margin-right: 59px;
 }
 
 .promo-link a {
@@ -2277,7 +2278,14 @@ fieldset legend {
   height: 24px;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
   appearance: none;
+}
+
+.brands-item input::-ms-check {
+  position: absolute;
+  opacity: 0;		/* for internet explorer */
 }
 
 .checkbox-off {
@@ -2351,6 +2359,11 @@ fieldset legend {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+.powered-item input::-ms-check {
+  position: absolute;
+  opacity: 0;		/* for internet explorer */
 }
 
 .powered-item label {
