@@ -1,11 +1,3 @@
-/* Позиционирование */
- /* Блочная модель */
- /* Типографика */
- /* Оформление */
-  /* Анимация */
-  /* Разное */
-
-
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -146,6 +138,7 @@ html {
 }
 
 body {
+  min-width: 960px;
   margin: 0;
   padding: 0;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -153,6 +146,7 @@ body {
   font-weight: 400;
   color: #000000;
   background-color: #ffffff;
+  overflow-x: auto;
 }
 
 a {
@@ -293,8 +287,8 @@ img {
 }
 
 .search-button {
-  vertical-align: middle;
   display: inline-block;
+  vertical-align: middle;
   width: 49px;
   padding: 0px; 
   font-size: 0px;
@@ -389,6 +383,7 @@ img {
 
 .links-container a {
   display: inline-block;
+  vertical-align: middle;
   width: 150px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 17px;
@@ -427,7 +422,6 @@ img {
 }
 
 .cart-logo{
-  display: inline-block;
   width: 15px;
   height: 15px;
   margin-right: 12px;
@@ -547,14 +541,11 @@ img {
 }
 
 .call-icon {
-  vertical-align: top;
   display: inline-block;
+  vertical-align: top;
   width: 19px;
   height: 19px;
   margin-right: 35px;
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-size: 19px 19px;
 }
 
 .login-links {
@@ -565,8 +556,8 @@ img {
 }
 
 .login-link {
-  vertical-align: top;
   display: inline-block;
+  vertical-align: top;
   width: 123px;
   padding-bottom: 12px;
   padding-top: 12px;
@@ -582,8 +573,8 @@ img {
 }
 
 .login-icon {
-  vertical-align: middle;
   display: inline-block;
+  vertical-align: middle;
   width: 20px;
   height: 17px;
   margin-right: 9px;
@@ -610,8 +601,8 @@ img {
 
 
 .registration-link {
-  vertical-align: top;
   display: inline-block;
+  vertical-align: top;
   width: 150px;
   padding-bottom: 12px;
   padding-top: 12px;
@@ -670,16 +661,16 @@ img {
 }
 
 .user-profile-icon {
-  vertical-align: middle;
   display: inline-block;
+  vertical-align: middle;
   width: 20px;
   height: 19px;
   margin-right: 9px;
 }
 
 .logout-link {
-  vertical-align: middle;
   display: inline-block;
+  vertical-align: middle;
   width: 22px;
   height: 18px;
 }
@@ -690,8 +681,8 @@ img {
 }
 
 .account-links a {
-  vertical-align: middle;
   display: inline-block;
+  vertical-align: middle;
   color: #32425c;
   font-size: 16px;
   font-weight: 400;
@@ -718,8 +709,8 @@ img {
 }
 
 .dark-dot {
-  vertical-align: middle;
   display: inline-block;
+  vertical-align: middle;
   width: 5px;
   height: 5px;
   background-color: #32425c;
@@ -904,11 +895,13 @@ img {
 }
 
 .slide1 {
-  background-image: url("../img/slider-1.jpg")
+  background-image: url("../img/slider-1.jpg");
+  background-color: #775b50;
 }
 
 .slide2 {
-  background-image: url("../img/slider-2.jpg")
+  background-image: url("../img/slider-2.jpg");
+  background-color: #d3c1ad;
 }
 
 .slider-container .controls {
@@ -925,9 +918,9 @@ img {
 }
 
 .arrow-buttons label {
-  vertical-align: baseline;
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   height: 40px;
   width: 22px;
   background-color: transparent;
@@ -947,8 +940,8 @@ img {
 
 .controls label {
   position: relative;
-  vertical-align: middle;
   display: inline-block;
+  vertical-align: middle;
   height: 10px;
   width: 10px;
   background-color: #ffffff;
@@ -956,9 +949,9 @@ img {
   border-radius: 50%;
   cursor: pointer;
   z-index: 3;
-  -webkit-transition: background ease-in-out .5s;
-	-o-transition: background ease-in-out .5s;
-	transition: background ease-in-out .5s;
+  -webkit-transition: ease-in-out .5s;
+	-o-transition: ease-in-out .5s;
+	transition: ease-in-out .5s;
 }
 
 .controls label:nth-of-type(1) {
@@ -987,7 +980,7 @@ img {
   width: 195px;
   padding: 10px 0;
   padding-right: 45px;
-  padding-left: 49px;
+  padding-left: 48px;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -1535,7 +1528,7 @@ img {
 }
 
 .service-subtext {
-  max-width: 380px;
+  max-width: 377px;
 }
 
 .service-subtext h4 {
@@ -1576,7 +1569,7 @@ img {
 }
 
 .technomart-info {
-  display: -webkit-box;
+ 
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
@@ -1600,6 +1593,7 @@ img {
 
 .company-info {
   width: 540px;
+  margin-right: 100px;
   padding-right: 17px;
 }
 
@@ -1637,8 +1631,8 @@ img {
 
 .trucking-companys > li::before {
   content: "";
-  vertical-align: middle;
   display: inline-block;
+  vertical-align: middle;
   top: 1px;
   margin-right: 10px;
   width: 25px;
@@ -1661,7 +1655,7 @@ img {
 }
 
 
-.company-contacts p:not(:last-of-type) {
+.company-contacts p {
   margin: 0px;
   margin-bottom: 33px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1671,12 +1665,14 @@ img {
 }
 
 .feedback-link{
+  display: block;
   width: 300px;
   padding-left: 63px;
   padding-right: 59px;
   padding-top: 10px;
   padding-bottom: 10px;
   border: none;
+  border-radius: 3px;
   background-color: #ee3643;
   color: #ffffff;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -1684,13 +1680,14 @@ img {
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  cursor: pointer;
 }
-
 
 .map-link {
   display: block;
   width: 300px;
   margin-bottom: 35px;
+  cursor: pointer;
 }
 
 .footer-top {
@@ -1801,8 +1798,8 @@ img {
 }
 
 .bottom-item {
-  vertical-align: middle;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .bottom-item:hover {
@@ -1859,8 +1856,8 @@ img {
 }
 
 .promo-link {
-  vertical-align: middle;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .promo-link:not(:nth-of-type(4n + 4)) {
@@ -1921,8 +1918,8 @@ img {
 
  .social-item {
   position: relative;
-  vertical-align: middle;
   display: inline-block;
+  vertical-align: middle;
   width: 42px;
   height: 42px;
   background-color: #212a3a;
@@ -1960,7 +1957,7 @@ img {
 .social-item:nth-of-type(3) a {
   position: absolute;
   top: 9px;
-  left: 7px;
+  left: 8px;
   display: block;
   width: 21px;
   height: 21px;
@@ -1992,6 +1989,7 @@ img {
   color: #ffffff;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 16px;
+  font-style: normal;
   font-weight: 400;
   line-height: 18px;
 }
@@ -2046,6 +2044,7 @@ img {
 
 .page-link {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .page-link:first-of-type a  {
@@ -2217,6 +2216,7 @@ img {
 
 .price-controls input {
   display: inline-block;
+  vertical-align: middle;
   width: 95px;
   padding-top: 9px;
   padding-bottom: 11px;
@@ -2301,6 +2301,7 @@ fieldset legend {
   width: 27px;
   height: 24px;
   margin: 0;
+  cursor: pointer;
 }
 
 .checkbox-on {
@@ -2311,6 +2312,7 @@ fieldset legend {
   width: 27px;
   height: 24px;
   margin: 0;
+  cursor: pointer;
 }
 .brand-checkbox:disabled .checkbox-svg {
   fill: #b5b5b5;
@@ -2329,6 +2331,7 @@ fieldset legend {
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .brand-checkbox:checked ~ .checkbox-on {
@@ -2379,6 +2382,7 @@ fieldset legend {
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .radio-off {
@@ -2388,6 +2392,7 @@ fieldset legend {
   width: 25px;
   height: 25px;
   margin: 0;
+  cursor: pointer;
 }
 
 .radio-on {
@@ -2398,6 +2403,7 @@ fieldset legend {
   width: 25px;
   height: 25px;
   margin: 0;
+  cursor: pointer;
 }
 
 .radio-off:hover .radio-off--svg,
@@ -2424,6 +2430,7 @@ fieldset legend {
   line-height: 18px;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
+   cursor: pointer;
 }
 
 .content-row {
@@ -2445,7 +2452,7 @@ fieldset legend {
   justify-content: space-between;
   -ms-flex-line-pack: justify;
   align-content: space-between;
-  margin-bottom: 33px;
+  margin-bottom: 31px;
 }
 
 .sort-container {
@@ -2467,7 +2474,6 @@ fieldset legend {
 }
 
 .sort-container p {
-  display: inline-block;
   margin: 0;
   padding: 0;
   padding-left: 19px;
@@ -2585,6 +2591,7 @@ fieldset legend {
 
 .switcher-item {
   display: inline-block;
+  vertical-align: middle;
   width: 38px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2869,7 +2876,7 @@ article p {
   -webkit-box-shadow: 0 0 15px 1px rgba(47, 42, 43, 0.5);
   box-shadow: 0 0 15px 1px rgba(47, 42, 43, 0.5);
   -webkit-animation: bounce 1s;
-  animation: bounce 1s; 
+  animation: bounce 1s;
 }
 
 .map-popup p {

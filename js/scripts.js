@@ -54,9 +54,9 @@ window.addEventListener('keydown', function (evt) {
 });
 
 if (document.body.contains(document.querySelector('.feedback-link'))) {
-var feedbackLink = document.querySelector('.feedback-link');
-var feedbackPopup = document.querySelector('.write-modal');
-var close = feedbackPopup.querySelector('.modal-close');
+  var feedbackLink = document.querySelector('.feedback-link');
+  var feedbackPopup = document.querySelector('.write-modal');
+  var close = feedbackPopup.querySelector('.modal-close');
   feedbackLink.addEventListener('click', function (evt) {
     evt.preventDefault();
     feedbackPopup.classList.add('modal-show');
@@ -78,26 +78,26 @@ var close = feedbackPopup.querySelector('.modal-close');
 };
 
 if (document.body.contains(document.querySelector('.map-link'))) {
-var mapLink = document.querySelector('.map-link');
-var mapPopup = document.querySelector('.map-popup');
-var mapClose = mapPopup.querySelector('.modal-close');
+  var mapLink = document.querySelector('.map-link');
+  var mapPopup = document.querySelector('.map-popup');
+  var mapClose = mapPopup.querySelector('.modal-close');
 
-mapLink.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  mapPopup.classList.add('modal-show');
-});
-
-mapClose.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  mapPopup.classList.remove('modal-show');
-});
-
-window.addEventListener('keydown', function (evt) {
-  if (evt.keyCode === 27) {
+  mapLink.addEventListener('click', function (evt) {
     evt.preventDefault();
-    if (mapPopup.classList.contains('modal-show')) {
-      mapPopup.classList.remove('modal-show');
+    mapPopup.classList.add('modal-show');
+  });
+
+  mapClose.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.remove('modal-show');
+  });
+
+  window.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (mapPopup.classList.contains('modal-show')) {
+        mapPopup.classList.remove('modal-show');
+      }
     }
-  }
-});
+  });
 };
