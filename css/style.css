@@ -29,7 +29,7 @@
   font-family: "Cuprum";
   font-style: normal;
   font-weight: 700;
-  src: local("Cuprum Bold"), local("Cuprum-Bold") 
+  src: local("Cuprum Bold"), local("Cuprum-Bold"), 
   url("../fonts/web/cuprumbold.woff2") format("woff2"),
   url("../fonts/web/cuprumbold.woff") format("woff");
 }  
@@ -817,7 +817,7 @@ img {
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.2px;
 }
 
 .promo-item .promo-btn {
@@ -912,7 +912,7 @@ img {
 
 .slider-container .arrow-buttons {
   position: absolute;
-  bottom: 109px;
+  bottom: 113px;
   left: 0;
   width: 100%;
 }
@@ -1092,7 +1092,7 @@ img {
   align-items: center;
   width: 940px;
   margin: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   padding-top: 25px;
   padding-right: 24px;
   padding-bottom: 26px;
@@ -1179,7 +1179,7 @@ img {
   color: white;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
@@ -1339,7 +1339,7 @@ img {
 .popular-brands.container {
   width: 960px;
   margin: 0 auto;
-  margin-bottom: 69px;
+  margin-bottom: 65px;
   padding: 0 10px;
 }
 
@@ -1430,15 +1430,15 @@ img {
 }
 
 .service-text{
-  width: 400px;
-  padding-top: 62px;
-  margin-bottom: 70px;
+  width: 405px;
+  padding-top: 65px;
+  margin-bottom: 69px;
 }
 
 .service-text h3 {
   margin: 0px;
   margin-bottom: 26px;
-  font-family: Cuprum;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -1477,7 +1477,7 @@ img {
 .tablinks {
   display: block;
   width: 100%;
-  padding: 16px 22px;
+  padding: 15px 22px 16px;
   color: #ffffff;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
@@ -1594,7 +1594,6 @@ img {
 .company-info {
   width: 540px;
   margin-right: 100px;
-  padding-right: 17px;
 }
 
 .company-info p {
@@ -1608,6 +1607,7 @@ img {
 
 .company-info p:nth-child(3) {
   margin-bottom: 21px;
+  padding-right: 150px;
 }
 
 .trucking-companys {
@@ -1658,6 +1658,7 @@ img {
 .company-contacts p {
   margin: 0px;
   margin-bottom: 33px;
+  padding-right: 120px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   font-weight: 400;
@@ -1754,6 +1755,7 @@ img {
   display: block;
   margin: 0px;
   padding-left: 3px;
+  padding-right: 50px;
   color: #f3f7f9;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
@@ -2052,9 +2054,6 @@ img {
   vertical-align: middle;
   width: 14px;
   min-height: 12px;
-  background-image: url("/img/icon-home.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
 }
 
 .right-arrow {
@@ -2062,10 +2061,6 @@ img {
   margin-right: 16px;
   margin-left: 13px;
   padding: 0;
-  color: #c5c5c5;
-  background-image: url("/img/icon-right-small.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
 .page-link a {
@@ -2312,6 +2307,7 @@ fieldset legend {
   margin: 0;
   cursor: pointer;
 }
+
 .brand-checkbox:disabled .checkbox-svg {
   fill: #b5b5b5;
   opacity: 0.3;
@@ -2515,7 +2511,7 @@ fieldset legend {
 }
 .sort-link  {
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -2630,6 +2626,10 @@ fieldset legend {
   background-color: #ee3643;
 }
 
+.switcher-item.active a {
+  color: #ffffff;
+}
+
 article {
   padding-top: 65px;
   padding-bottom: 68px;
@@ -2647,7 +2647,6 @@ article {
 article p {
   margin: 0;
   padding: 0;
-  padding-right: 25px;
   font-size: 13px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
@@ -2753,6 +2752,7 @@ article p {
   font-weight: 400;
   line-height: 18px;
 }
+
 .user-contacts  input::-moz-placeholder {
   color: #a9a9a9;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -2760,6 +2760,7 @@ article p {
   font-weight: 400;
   line-height: 18px;
 }
+
 .user-contacts  input:-ms-input-placeholder {
   color: #a9a9a9;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -2767,6 +2768,7 @@ article p {
   font-weight: 400;
   line-height: 18px;
 }
+
 .user-contacts  input::-ms-input-placeholder {
   color: #a9a9a9;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -2774,6 +2776,7 @@ article p {
   font-weight: 400;
   line-height: 18px;
 }
+
 .user-contacts  input::placeholder {
   color: #a9a9a9;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -2806,6 +2809,7 @@ article p {
   font-weight: 400;
   line-height: 18px;
 }
+
 .user-message textarea::-moz-placeholder {
   color: #a9a9a9;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -2813,6 +2817,7 @@ article p {
   font-weight: 400;
   line-height: 18px;
 }
+
 .user-message textarea:-ms-input-placeholder {
   color: #a9a9a9;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -2820,6 +2825,7 @@ article p {
   font-weight: 400;
   line-height: 18px;
 }
+
 .user-message textarea::-ms-input-placeholder {
   color: #a9a9a9;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -2827,6 +2833,7 @@ article p {
   font-weight: 400;
   line-height: 18px;
 }
+
 .user-message textarea::placeholder {
   color: #a9a9a9;
   font-family: "PT Sans", "Arial", sans-serif;
